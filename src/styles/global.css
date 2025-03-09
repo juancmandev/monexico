@@ -1,0 +1,16 @@
+@import 'tailwindcss';
+@plugin "@tailwindcss/typography";
+@config "./tailwind.config.js";
+
+@theme {
+  --color-primary: #ff8303;
+  --color-secondary: #a35709;
+  --color-background: #1b1a17;
+  --color-foreground: #f0e3ca;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground;
+  }
+}

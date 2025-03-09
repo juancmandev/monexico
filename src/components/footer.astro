@@ -1,0 +1,27 @@
+---
+const lastBuild = new Date();
+---
+
+<footer class='text-center pt-10 pb-14 border-t-[0.5px]'>
+  <div class='prose mx-auto'>
+    <p>
+      Este proyecto está inspirado en <a
+        href='https://monerica.com/'
+        target='_blank'
+        >Monerica</a
+      >.
+    </p>
+    <p>Construido con <a href='https://astro.build/'>Astro</a></p>
+    <p>
+      Última build: {lastBuild.toISOString()}
+    </p>
+    <ul class='list-none p-0 flex gap-4 justify-center'>
+      <li class='p-0'>
+        <a href='https://github.com/juancmandev/monexico'>Source code</a>
+      </li>
+      <li class='p-0'>
+        <a href='https://github.com/juancmandev/monexico'>RSS</a>
+      </li>
+    </ul>
+  </div>
+</footer>

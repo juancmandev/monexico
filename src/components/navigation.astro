@@ -1,0 +1,30 @@
+---
+const navItems = [
+  {
+    label: 'Sobre Monero',
+    to: '/sobre-monero',
+  },
+  {
+    label: 'Directorio',
+    to: '/sobre-monero',
+  },
+];
+---
+
+<nav class='prose mx-auto my-10'>
+  <h1
+    id='navegación'
+    class='mb-4'
+  >
+    Navegación
+  </h1>
+  <ul class='list-none p-0 flex gap-4'>
+    {
+      navItems.map((navItem) => (
+        <li class='p-0'>
+          <a href={navItem.to}>{navItem.label}</a>
+        </li>
+      ))
+    }
+  </ul>
+</nav>
