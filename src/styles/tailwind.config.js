@@ -5,6 +5,11 @@ module.exports = {
       typography: () => ({
         DEFAULT: {
           css: {
+            pre: false,
+            code: false,
+            'pre code': false,
+            'code::before': false,
+            'code::after': false,
             '--tw-prose-body': 'var(--color-foreground)',
             '--tw-prose-headings': 'var(--color-foreground)',
             '--tw-prose-lead': 'var(--text-primary)',

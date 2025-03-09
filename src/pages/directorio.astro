@@ -1,0 +1,17 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import {
+  Content as Directory,
+  frontmatter as directoryData,
+} from '@/content/pages/directorio.mdx';
+import components from '@/components/mdx/wrapper';
+
+const pageData = {
+  title: directoryData.title,
+  description: directoryData.description,
+};
+---
+
+<Layout {...pageData}>
+  <Directory components={components} />
+</Layout>

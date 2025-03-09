@@ -7,10 +7,15 @@
   --color-secondary: #a35709;
   --color-background: #1b1a17;
   --color-foreground: #f0e3ca;
+  --color-border: #f0e3ca;
 }
 
 @layer base {
   body {
     @apply bg-background text-foreground;
+  }
+
+  .prose code {
+    @apply p-0.5 rounded-xs bg-black border border-border/20;
   }
 }

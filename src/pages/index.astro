@@ -4,6 +4,7 @@ import {
   Content as Welcome,
   frontmatter as welcomeData,
 } from '@/content/pages/bienvenido.mdx';
+import components from '@/components/mdx/wrapper';
 
 const pageData = {
   title: welcomeData.title,
@@ -12,5 +13,5 @@ const pageData = {
 ---
 
 <Layout {...pageData}>
-  <Welcome />
+  <Welcome components={components} />
 </Layout>
